@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "Google Account",
+      "price": 10,
+      "stock": 10,
+      "emails": []
+    },
+    {
+      "name": "Apple ID (Nigeria)",
+      "price": 50,
+      "stock": 10,
+      "emails": []
+    }
+  ]
+}
