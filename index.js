@@ -1,4 +1,5 @@
 async function loadProducts() {
+async function loadProducts() {
     const response = await fetch('data.json');
     const data = await response.json();
     const productList = document.getElementById('product-list');
@@ -44,8 +45,7 @@ async function buyNow(productName, button) {
             },
             body: JSON.stringify(data),
         });
-        alert('Purchase successful!');
-        loadProducts();
+        window.location.href = `payment.html?product=${productName}&email=${encodeURIComponent(email)}&remarks=${encodeURIComponent(remarks)}`;
     } else {
         alert('Purchase failed. Not enough stock.');
     }
